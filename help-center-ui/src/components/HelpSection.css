@@ -1,0 +1,116 @@
+/* src/components/HelpSection.css */
+
+/* Overlay for the Help Form */
+.help-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container for the Help Form */
+  .help-form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  /* Form Elements */
+  .help-form-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .help-form-container label {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .help-form-container input,
+  .help-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .help-form-container textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .help-form-container button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .help-form-container button:hover {
+    background: #0056b3;
+  }
+  
+
+/* Container for the Help Cards */
+.cards-container {
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /* Two cards per row on larger screens */
+    gap: 20px; /* Gap between cards */
+    padding: 20px;
+  }
+  
+  /* Individual Card Styling */
+  .card {
+    background: #ffffff; /* White background for each card */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    max-width: 300px; /* Max width of each card */
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+  }
+  
+  .card h3 {
+    margin: 0 0 10px; /* Space below the title */
+    font-size: 18px; /* Font size for the title */
+    color: #333; /* Dark text color */
+  }
+  
+  .card p {
+    margin: 0; /* No margin for the description */
+    color: #666; /* Lighter text color */
+    font-size: 16px; /* Font size for the description */
+  }
+  
+  /* Button styling */
+  button {
+    background: #007bff; /* Primary button color */
+    color: #ffffff; /* Text color for button */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px; /* Space around the button */
+  }
+  
+  button:hover {
+    background: #0056b3; /* Darker button color on hover */
+  }
+  
